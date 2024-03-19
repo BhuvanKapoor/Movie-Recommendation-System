@@ -20,19 +20,22 @@ The dataset used in this project is `movies.csv`, which contains information abo
 
 6. **Retrieving Similar Movies**: The index of the user's input movie (or its closest match) is used to retrieve its corresponding similarity scores with all other movies. These scores are then sorted in descending order.
 
-7. **Recommendations**: The top 30 most similar movies (based on the sorted similarity scores) are recommended to the user.
+7. **Recommendations**: The top 10 most similar movies (based on the sorted similarity scores) are recommended to the user.
 
 ## Usage
 
 1. Clone the repository or download the project files.
-2. Run the following command:
+2. Set the working directory to the location of the downloaded/cloned folder.
+3. Place the `movies.csv` dataset in the project directory.
+4. Run
 ```
 pip install -r requirements.txt
 ```
-4. Place the `movies.csv` dataset in the project directory.
-5. Run the Python script.
-6. Enter a movie title when prompted.
-7. The system will display the recommended movies based on the input.
+```
+python app.py
+```
+5. Enter a movie title.
+6. The system will display the recommended movies based on the input.
 
 ## Example
 ```
